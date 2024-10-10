@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "561d153b-e328-4b5c-9e50-9e6934857518",
+		"name": "Motos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33914419"
+	},
+	"item": [
+		{
+			"name": "obtener motos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/motos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"motos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener moto por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/motos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"motos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregar moto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"marca\":\"honda\",\r\n        \"modelo\":\"1995\",\r\n        \"cilindraje\":\"125\",\r\n        \"kilometros\":105000,\r\n        \"colisiones\":3,\r\n        \"mantenimiento\":true,\r\n        \"tipo_moto\":{\"adventure\":\"adventure\",\"naked\":\"naked\",\"sport\":\"sport\"}\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/motos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"motos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar moto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/motos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"motos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar moto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\" : \"akt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/motos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"motos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
